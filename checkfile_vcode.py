@@ -10,3 +10,7 @@ if len(sys.argv)==2:
 		print "[-]Read permission denied[-]"
 		exit(0)
 	print "[+] Reading file= "+str(filename)
+	
+	
+	#how to run
+	#python checkfile_vcode.py supportingfile.txt
