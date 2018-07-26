@@ -1,3 +1,5 @@
+#sample code for bruteforcing a zip file
+#coded by -> pyload
 import zipfile
 import optparse
 from threading import Thread 
@@ -35,7 +37,7 @@ def main():
 	else:
 		zname=options.zname  # else the zipfile name is stored on zname
 		dname=options.dname	# same as above
-	zFile=zipfile.ZipFile(zname)  #initialize the zame with zipfile package 					# and then save it to zFile 
+	zFile=zipfile.ZipFile(zname)  #initialize the zame with zipfile package # and then save it to zFile 
 
 	passfile=open(dname) # opens the file 
 	for line in passfile.readlines(): # reads each line of the dict file
