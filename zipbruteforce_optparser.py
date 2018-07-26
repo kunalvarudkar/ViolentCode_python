@@ -1,5 +1,5 @@
 #sample code for bruteforcing a zip file
-#coded by -> pyload
+#coded by -> payload
 import zipfile
 import optparse
 from threading import Thread 
