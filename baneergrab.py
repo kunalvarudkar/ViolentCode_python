@@ -1,3 +1,9 @@
+#code for baneer grabbing
+#coded by ->payload
+
+#how to run
+#python baneergrab.py -H x.x.x.x -P 21,22,23,32,70 
+
 import optparse
 from socket import *
 from threading import *
@@ -7,7 +13,7 @@ screenlock=Semaphore(value=1)
 def optparser():
     parser=optparse.OptionParser("Program usage -H <target host> -P <target port>")
     parser.add_option('-H',dest='tgthost',type='string',help='specify target host')
-    parser.add_option('-P',dest='tgtport',type='string',help='specify target port[s]')
+    parser.add_option('-P',dest='tgtport',type='string',help='specify target port[s] seperated by commas(,)')
     (options,args)=parser.parse_args()
     tgthost=options.tgthost
     tgtport = str(options.tgtport).split(',')  
