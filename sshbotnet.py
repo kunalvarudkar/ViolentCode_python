@@ -30,9 +30,9 @@ def connect(user,host,password):
 	print child.before # print out the result
 
 def main():
-	user='kpit'
-	password='qemu'
-	host='10.10.51.71'
+	user='demouser'
+	password='haha123'
+	host='10.10.1.100'
 	connect(user,host,password)
 
 if __name__=='__main__':
