@@ -8,7 +8,6 @@ import pexpect
 def connect(user,host,password):
 	ssh_newkey = 'Are you sure you want to continue connecting'
 	# my ssh command line
-	#child=pexpect.spawn('ssh kpit@10.10.51.71 uname -a')
 	child=pexpect.spawn('ssh '+user+'@'+host+' uname -a')
 	ret=child.expect([ssh_newkey,'password:',pexpect.EOF])
 	print ret
@@ -22,7 +21,7 @@ def connect(user,host,password):
 		print "[-]Not found: "+str(ssh_newkey)
 		print "[!]Jumping to List[1]"
 		print "typing password to get ssh login",
-    		child.sendline("qemu")
+    		child.sendline(password)
     		child.expect(pexpect.EOF)    
 	elif ret==2:
     		print "Connection Timeout"
