@@ -28,8 +28,8 @@ def addClient(host, user, password):
 	botNet.append(client)
 
 botNet = []
-addClient('10.10.51.71', 'kpit', 'qemu')
-addClient('127.0.0.1', 'kpit', 'haha123')
+addClient('10.10.51.71', 'demo1', 'qemu')
+addClient('127.0.0.1', 'demo', 'haha123')
 addClient('10.10.10.130', 'root', 'toor')
 botnetCommand('uname -v')
 botnetCommand('cat /etc/issue')
