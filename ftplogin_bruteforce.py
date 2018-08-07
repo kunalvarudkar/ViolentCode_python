@@ -1,3 +1,5 @@
+#program for ftp bruteforce 
+#coded by -> payload
 import ftplib
 import optparse
 from threading import *
